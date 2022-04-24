@@ -188,8 +188,8 @@ function appendToTable(qas) {
         //Get the answer and the user answer for the current qa
         var answer = qas[i].getAnswer();
         var answer2;
-        if (qas[i].getUserAnswer2() != underfined) {
-            answer2 = qas[i].getUserAnswer2();
+        if (qas[i].getAnswer2() != undefined) {
+            answer2 = qas[i].getAnswer2();
         }
         var userAnswer = qas[i].getUserAnswer();
 
@@ -219,8 +219,8 @@ function appendToTable(qas) {
         cell = document.createElement("td");
         //Set the text of the cell
         var answer = qas[i].getAnswer();
-        var answer2 = qas[i].getUserAnswer2();
-        if (answer2 != underfined) {
+        var answer2 = qas[i].getAnswer2();
+        if (answer2 != undefined) {
             cell.innerHTML = answer + " ou " + answer2;
         } else {
             cell.innerHTML = answer;
