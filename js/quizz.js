@@ -174,6 +174,7 @@ function appendToTable(qas) {
 
     //Get the table body
     var tableBody = document.getElementById("table-results-body");
+    var note = 0;
     //Get the length of qas
     var length = qas.length;
 
@@ -190,10 +191,11 @@ function appendToTable(qas) {
         //if the answer = userAnswer, the cell should be green and have a checkmark icon
         //else the cell should be red and have a cross icon
         if (answer == userAnswer) {
-            cell.setAttribute("class", "green");
+            row.setAttribute("class", "row-green");
             cell.innerHTML = "✔️";
+            note++;
         } else {
-            cell.setAttribute("class", "red");
+            row.setAttribute("class", "row-red");
             cell.innerHTML = "❌";
         }
         row.appendChild(cell);
@@ -218,4 +220,23 @@ function appendToTable(qas) {
         //Append the row to the table body
         tableBody.appendChild(row);
     }
+    var noteDisplay = document.getElementById("note-display");
+    var noteTitle = document.createElement("h1");
+    noteTitle.innerHTML = note + "/" + length + " bonnes réponses (" + (note / length * 100).toFixed(2) + "%)";
+    //Change the title attribute of the noteTitle div
+    //Change the color of the title depending on the note
+    if (note / length >= 0.8) {
+        noteTitle.setAttribute("class", "title-green");
+    } else if (note / length >= 0.5) {
+        noteTitle.setAttribute("class", "title-orange");
+    } else {
+        noteTitle.setAttribute("class", "title-red");
+    }
+
+
+    noteDisplay.appendChild(noteTitle);
+    noteTitle = document.createElement("hr");
+    noteDisplay.appendChild(noteTitle);
+
+
 }
