@@ -15,7 +15,8 @@ function openAnswer(fileName) {
     for (var i = 0; i < jsonObj.length; i++) {
         //new qa object
 
-        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].answer2, jsonObj[i].img);
+        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].answer2, jsonObj[i].imgURI);
+
         qas.push(qa);
     }
 
