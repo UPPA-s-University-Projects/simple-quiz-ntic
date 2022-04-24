@@ -38,9 +38,11 @@ tbody tr {
 }
 
 .row-green {
-    background-color: #00a65a;
+    background-color: #00a65a!important;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
 .row-red {
-    background-color: #dd4b39;
+    background-color: #dd4b39!important;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }

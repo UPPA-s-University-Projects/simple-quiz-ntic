@@ -202,7 +202,12 @@ function appendToTable(qas) {
         row.appendChild(cell);
         cell = document.createElement("td");
         //Set the text of the cell
-        cell.setAttribute("style", "background-image: URL('./res/Fruitiers/" + qas[i].getImgURI() + "'); background-position: center; background-size: contain; background-repeat: no-repeat;");
+        var img = document.createElement("img");
+        img.src = "./res/Fruitiers/" + qas[i].getImgURI();
+        img.setAttribute("id", "image");
+        cell.appendChild(img);
+
+        //cell.setAttribute("style", "background-image: URL('"./res/Fruitiers/" + qas[i].getImgURI() + "'); background-position: center; background-size: contain; background-repeat: no-repeat;");
         //cell.setAttribute("style", "background-po")
         //Append the cell to the row
         row.appendChild(cell);
