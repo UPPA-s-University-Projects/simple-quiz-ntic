@@ -5,9 +5,10 @@
 //4. userAnswer
 class QA {
 
-    constructor(question, answer, image, userAnswer) {
+    constructor(question, answer, answer2, image, userAnswer) {
         this.question = question;
         this.answer = answer;
+        this.answer2 = answer2
         this.imgURI = image;
         this.userAnswer = userAnswer;
     }
@@ -23,6 +24,13 @@ class QA {
 
     getAnswer() {
         return this.answer;
+    }
+
+    getAnswer2() {
+        return this.answer2;
+    }
+    setAnswer2(answer2) {
+        this.answer2 = answer2;
     }
 
     setAnswer(answer) {

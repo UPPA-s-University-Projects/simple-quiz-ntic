@@ -187,11 +187,15 @@ function appendToTable(qas) {
 
         //Get the answer and the user answer for the current qa
         var answer = qas[i].getAnswer();
+        var answer2;
+        if (qas[i].getUserAnswer2() != underfined) {
+            answer2 = qas[i].getUserAnswer2();
+        }
         var userAnswer = qas[i].getUserAnswer();
 
         //if the answer = userAnswer, the cell should be green and have a checkmark icon
         //else the cell should be red and have a cross icon
-        if (answer == userAnswer) {
+        if (answer.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '') || answer2.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '')) {
             row.setAttribute("class", "row-green");
             cell.innerHTML = "✔️";
             note++;
@@ -214,7 +218,13 @@ function appendToTable(qas) {
         //Append a new cell to the row
         cell = document.createElement("td");
         //Set the text of the cell
-        cell.innerHTML = qas[i].getAnswer();
+        var answer = qas[i].getAnswer();
+        var answer2 = qas[i].getUserAnswer2();
+        if (answer2 != underfined) {
+            cell.innerHTML = answer + " ou " + answer2;
+        } else {
+            cell.innerHTML = answer;
+        }
         //Append the cell to the row
         row.appendChild(cell);
         //Append a new cell to the row
