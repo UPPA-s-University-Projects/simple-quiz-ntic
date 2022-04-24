@@ -198,14 +198,37 @@ function appendToTable(qas) {
 
         //if the answer = userAnswer, the cell should be green and have a checkmark icon
         //else the cell should be red and have a cross icon
-        if (answer.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '') || answer2.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '')) {
-            row.setAttribute("class", "row-green");
-            cell.innerHTML = "✔️";
-            note++;
+        if (answer2 != undefined) {
+            if (userAnswer != undefined) {
+                if (answer.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '') || answer2.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '')) {
+                    row.setAttribute("class", "row-green");
+                    cell.innerHTML = "✔️";
+                    note++;
+                } else {
+                    row.setAttribute("class", "row-red");
+                    cell.innerHTML = "❌";
+                }
+            } else {
+                row.setAttribute("class", "row-red");
+                cell.innerHTML = "❌";
+            }
         } else {
-            row.setAttribute("class", "row-red");
-            cell.innerHTML = "❌";
+            if (userAnswer != undefined) {
+                if (answer.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '')) {
+                    row.setAttribute("class", "row-green");
+                    cell.innerHTML = "✔️";
+                    note++;
+                } else {
+                    row.setAttribute("class", "row-red");
+                    cell.innerHTML = "❌";
+                }
+            } else {
+                row.setAttribute("class", "row-red");
+                cell.innerHTML = "❌";
+            }
+
         }
+
         row.appendChild(cell);
         cell = document.createElement("td");
         //Set the text of the cell
