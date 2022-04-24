@@ -25,6 +25,9 @@ class QA {
     getAnswer() {
         return this.answer;
     }
+    setAnswer(answer) {
+        this.answer = answer;
+    }
 
     getAnswer2() {
         return this.answer2;
@@ -33,9 +36,6 @@ class QA {
         this.answer2 = answer2;
     }
 
-    setAnswer(answer) {
-        this.answer = answer;
-    }
 
     getImgURI() {
         return this.imgURI;

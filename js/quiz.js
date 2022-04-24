@@ -71,7 +71,7 @@ function openAnswer(fileName) {
 //Function that call the openAnswer function 
 //Create a new radio button for each question
 //Display the question and the image
-function populateQuizz(qas) {
+function populateQuiz(qas) {
 
     //get the length of qas
     var length = qas.length;
