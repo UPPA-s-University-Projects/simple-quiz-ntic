@@ -13,7 +13,9 @@ function openAnswer(fileName) {
     //Create a table of qa objects
     var qas = [];
     for (var i = 0; i < jsonObj.length; i++) {
-        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].imgURI, jsonObj[i].userAnswer);
+        //new qa object
+
+        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].answer2, jsonObj[i].img);
         qas.push(qa);
     }
 
