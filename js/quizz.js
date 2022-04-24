@@ -107,7 +107,7 @@ function populateQuizz(qas) {
 function addEventListenerToRadioButton() {
     var radios = document.getElementsByClassName("q-select-radio");
     for (var i = 0; i < radios.length; i++) {
-        radios[i].addEventListener("click", function() {
+        radios[i].addEventListener("change", function() {
 
             //Get the value of the selected radio button
             var value = this.value;
@@ -121,17 +121,7 @@ function addEventListenerToRadioButton() {
             //document.getElementById("question").innerHTML = question;
             document.getElementById("image").src = "./res/Fruitiers/" + image;
 
-            //If there is no next radio button (i.e the last button is seleted), the next button should change the page to the result one
-            //The text of the button should channge from the arrow to "Finir"
-            if (index == qas.length - 1) {
-                // document.getElementById("next").innerHTML = "Finir";
-                document.getElementById("next").addEventListener("click", function() {
-                    localStorage.setItem("qas", JSON.stringify(qas));
-                    console.log(qas.length);
-                    //Change the page to the result one
-                    window.location.href = "./results.html";
-                });
-            }
+
         });
     }
 }
@@ -151,11 +141,30 @@ function addEventListenerToNextButton() {
         var userAnswer = document.getElementById("user-answer_input").value;
         //Set the userAnswer of the selected qa
         qas[index].setUserAnswer(userAnswer);
-        //log the userAnswer for the current qa
-        console.log(qas[index].getUserAnswer());
-        //Select the next radio button
-        document.getElementsByClassName("q-select-radio")[index++].checked = true;
 
+        //If there is no next radio button (i.e the last button is seleted), the next button should change the page to the result one
+        //The text of the button should channge from the arrow to "Finir"
+        if (index == qas.length - 1) {
+            console.log(index);
+            // document.getElementById("next").innerHTML = "Finir";
+            document.getElementById("next").addEventListener("click", function() {
+                localStorage.setItem("qas", JSON.stringify(qas));
+                console.log(qas.length);
+                //Change the page to the result one
+                window.location.href = "./results.html";
+            });
+        } else {
+            //Select the next radio button
+            document.getElementsByClassName("q-select-radio")[parseInt(index) + 1].checked = true;
+            //Select the next obj in the table and change the image accordingly
+            // var question = qas[parseInt(index) + 1].question;
+            var image = qas[parseInt(index) + 1].getImgURI();
+            //Display the question and the image
+            //document.getElementById("question").innerHTML = question;
+            document.getElementById("image").src = "./res/Fruitiers/" + image;
+
+            document.getElementById("user-answer_input").value = "";
+        }
     });
 }
 
@@ -182,15 +191,15 @@ function appendToTable(qas) {
         //else the cell should be red and have a cross icon
         if (answer == userAnswer) {
             cell.setAttribute("class", "green");
-            cell.innerHTML = "<i class='fa fa-check'></i>";
+            cell.innerHTML = "✔️";
         } else {
             cell.setAttribute("class", "red");
-            cell.innerHTML = "<i class='fa fa-times'></i>";
+            cell.innerHTML = "❌";
         }
         row.appendChild(cell);
         cell = document.createElement("td");
         //Set the text of the cell
-        cell.setAttribute("style", "background-image: URL('./res/Fruitiers/" + qas[i].getImgURI() + "'); background-position: center; background-size: cover;");
+        cell.setAttribute("style", "background-image: URL('./res/Fruitiers/" + qas[i].getImgURI() + "'); background-position: center; background-size: contain; background-repeat: no-repeat;");
         //cell.setAttribute("style", "background-po")
         //Append the cell to the row
         row.appendChild(cell);
