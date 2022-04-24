@@ -17,7 +17,7 @@ function openAnswer(fileName) {
         qas.push(qa);
     }
 
-    return qas;
+    return qas.sort(() => Math.random() - 0.5);
 
     // //Create a table to display the data
     // var table = document.createElement("table");
