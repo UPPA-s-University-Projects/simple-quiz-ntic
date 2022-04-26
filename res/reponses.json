@@ -25,7 +25,7 @@
     { "answer": "Psidium guajava MYRTACEES Goyavier", "imgURI": "Psidium_guajava.jpg" },
     { "answer": "Olea europea OLEACEES Olivier", "imgURI": "Olea europea.jpg" },
     { "answer": "Averrhoa carambola OXALIDACEES Carambole", "imgURI": "Averrhoa carambola.jpg" },
-    { "answer": "Passiflora edulis PASSIFLORACEES Grenadille", "answer2": "Passiflora edulis PASSIFLORACEES fruit de la passion", "imgURI": "Passiflore edulis.jpg" },
+    { "answer": "Passiflora edulis PASSIFLORACEES Grenadille", "answer2": "Passiflora edulis PASSIFLORACEES Fruit de la passion", "imgURI": "Passiflore edulis.jpg" },
     { "answer": "Punica granatum PUNICACEES Grenadier", "imgURI": "Punica granatum.jpg" },
     { "answer": "Aronia melanocarpa ROSACEES Aronie", "imgURI": "Aronia melanocarpa.jpg" },
     { "answer": "Cydonia oblonga ROSACEES Cognassier", "imgURI": "Cydonia oblonga.jpg" },
