@@ -237,6 +237,14 @@ function appendToTable(qas) {
         img.setAttribute("id", "image");
         cell.appendChild(img);
 
+        row.appendChild(cell);
+        cell = document.createElement("td");
+        //Set the text of the cell
+        var question = document.createElement("question");
+        question.innerHTML = qas[i].getQuestion();
+
+        cell.appendChild(img);
+
         //cell.setAttribute("style", "background-image: URL('"./res/Img/" + qas[i].getImgURI() + "'); background-position: center; background-size: contain; background-repeat: no-repeat;");
         //cell.setAttribute("style", "background-po")
         //Append the cell to the row
@@ -259,6 +267,9 @@ function appendToTable(qas) {
         cell.innerHTML = qas[i].getUserAnswer();
         //Append the cell to the row
         row.appendChild(cell);
+
+
+
         //Append the row to the table body
         tableBody.appendChild(row);
     }
