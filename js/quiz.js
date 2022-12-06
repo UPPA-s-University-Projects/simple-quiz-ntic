@@ -15,7 +15,7 @@ function openAnswer(fileName) {
     for (var i = 0; i < jsonObj.length; i++) {
         //new qa object
 
-        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].answer2, jsonObj[i].imgURI);
+        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].answer2, jsonObj[i].imgURI, jsonObj[i].type, jsonObj[i].choices[4]);
 
         qas.push(qa);
     }
@@ -98,11 +98,11 @@ function populateQuiz(qas) {
     //Auto select the first radio button of the list
     document.getElementsByClassName("q-select-radio")[0].checked = true;
     //Set the question and the image
-    //var question = qas[0].question;
+    var question = qas[0].question;
     var image = qas[0].getImgURI();
     //Display the question and the image
-    //document.getElementById("question").innerHTML = question;
-    document.getElementById("image").src = "./res/Fruitiers/" + image;
+    document.getElementById("question").innerHTML = question;
+    document.getElementById("image").src = "./res/Img/" + image;
 
 
 }
@@ -118,12 +118,12 @@ function addEventListenerToRadioButton() {
             //Get the index of the selected radio button
             var index = value.substring(1);
             //Get the question and the image
-            //var question = qas[index].question;
+            var question = qas[index].question;
 
             var image = qas[index].getImgURI();
             //Display the question and the image
-            //document.getElementById("question").innerHTML = question;
-            document.getElementById("image").src = "./res/Fruitiers/" + image;
+            document.getElementById("question").innerHTML = question;
+            document.getElementById("image").src = "./res/Img/" + image;
 
 
         });
@@ -161,11 +161,11 @@ function addEventListenerToNextButton() {
             //Select the next radio button
             document.getElementsByClassName("q-select-radio")[parseInt(index) + 1].checked = true;
             //Select the next obj in the table and change the image accordingly
-            // var question = qas[parseInt(index) + 1].question;
+            var question = qas[parseInt(index) + 1].question;
             var image = qas[parseInt(index) + 1].getImgURI();
             //Display the question and the image
-            //document.getElementById("question").innerHTML = question;
-            document.getElementById("image").src = "./res/Fruitiers/" + image;
+            document.getElementById("question").innerHTML = question;
+            document.getElementById("image").src = "./res/Img/" + image;
 
             document.getElementById("user-answer_input").value = "";
         }
@@ -233,11 +233,11 @@ function appendToTable(qas) {
         cell = document.createElement("td");
         //Set the text of the cell
         var img = document.createElement("img");
-        img.src = "./res/Fruitiers/" + qas[i].getImgURI();
+        img.src = "./res/Img/" + qas[i].getImgURI();
         img.setAttribute("id", "image");
         cell.appendChild(img);
 
-        //cell.setAttribute("style", "background-image: URL('"./res/Fruitiers/" + qas[i].getImgURI() + "'); background-position: center; background-size: contain; background-repeat: no-repeat;");
+        //cell.setAttribute("style", "background-image: URL('"./res/Img/" + qas[i].getImgURI() + "'); background-position: center; background-size: contain; background-repeat: no-repeat;");
         //cell.setAttribute("style", "background-po")
         //Append the cell to the row
         row.appendChild(cell);
