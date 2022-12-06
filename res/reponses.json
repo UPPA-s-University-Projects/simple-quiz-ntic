@@ -1,3 +1,14 @@
 [
-    { "question": "Citer deux branches du droit privé", "answer": "", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] }
+    { "question": "Citer deux branches du droit privé", "answer": "Droit finances publiques, Droit constitutionnel, Droit administratif ", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Citer deux branches du droit public", "answer": "Droit du travail, Droit civil, Droit pénal, Droit commercial, Droit de la propriété intellectuelle", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Qu’est-ce que la QPC", "answer": "Question prioritaire de constitution ", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "A quoi sert la QPC ?", "answer": "saisir le conseil constitutionnel ", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Citer les deux types de droit du droit de l’UE", "answer": "Droit primaire, Droit dérivé ", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Que dit la CEDH", "answer": "Droit à la vie, Droit à un procès équitable, Interdiction à la torture", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Que rend le conseil des prud’hommes ?", "answer": "Jugement", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Comment juge les prud’hommes ?", "answer": "en droit, en faits", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Quel est la somme minimale pour faire appel ?", "answer": "5000", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Combien de temps avons nous pour faire appel ?", "answer": "1 mois", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Chez quelle partie ce déroule le jugement ? ", "answer": "Défendeur", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "Que contient le règlement intérieur ?", "answer": "HSE, Règle de discipline, Règle sur la loi de défense des salariés et le harcèlement moral", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
 ]
