@@ -39,4 +39,5 @@
     { "question": "Pour combien de temps sont choisis les conseillés du bureau de jugement ou de concialiation", "answer": "4 ans", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
     { "question": "Quelle juridiction est compétente pour régler les litiges de la convention européene ?", "answer": "Cours Européene Droit de l'Homme", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
     { "question": "", "answer": "", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "", "answer": "", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
 ]
