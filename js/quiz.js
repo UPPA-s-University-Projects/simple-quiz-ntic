@@ -161,7 +161,7 @@ function addEventListenerToNextButton() {
             //Select the next radio button
             document.getElementsByClassName("q-select-radio")[parseInt(index) + 1].checked = true;
             //Select the next obj in the table and change the image accordingly
-            var question = qas[parseInt(index) + 1].question;
+            var question = qas[parseInt(index) + 1].getQuestion();
             var image = qas[parseInt(index) + 1].getImgURI();
             //Display the question and the image
             document.getElementById("question").innerHTML = question;
@@ -240,8 +240,8 @@ function appendToTable(qas) {
         // row.appendChild(cell);
         cell = document.createElement("td");
         //Set the text of the cell
-        var question = document.createElement("question");
-        question.innerHTML = qas[i].question;
+
+        cell.innerHTML = qas[i].getQuestion();
 
         //cell.appendChild(img);
 
