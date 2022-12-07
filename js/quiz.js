@@ -230,14 +230,14 @@ function appendToTable(qas) {
         }
 
         row.appendChild(cell);
-        cell = document.createElement("td");
-        //Set the text of the cell
-        var img = document.createElement("img");
-        img.src = "./res/Img/" + qas[i].getImgURI();
-        img.setAttribute("id", "image");
-        cell.appendChild(img);
+        // cell = document.createElement("td");
+        // //Set the text of the cell
+        // var img = document.createElement("img");
+        // img.src = "./res/Img/" + qas[i].getImgURI();
+        // img.setAttribute("id", "image");
+        // cell.appendChild(img);
 
-        row.appendChild(cell);
+        // row.appendChild(cell);
         cell = document.createElement("td");
         //Set the text of the cell
         var question = document.createElement("question");
