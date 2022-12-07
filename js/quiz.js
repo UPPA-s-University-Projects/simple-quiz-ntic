@@ -241,7 +241,7 @@ function appendToTable(qas) {
         cell = document.createElement("td");
         //Set the text of the cell
 
-        cell.innerHTML = qas[i].getQuestion();
+        cell.innerHTML = qas[i].question;
 
         //cell.appendChild(img);
 
