@@ -15,7 +15,7 @@ function openAnswer(fileName) {
     for (var i = 0; i < jsonObj.length; i++) {
         //new qa object
 
-        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].answer2, jsonObj[i].imgURI, jsonObj[i].type, jsonObj[i].choices[4]);
+        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].answer2, jsonObj[i].imgURI);
 
         qas.push(qa);
     }
@@ -243,7 +243,7 @@ function appendToTable(qas) {
         var question = document.createElement("question");
         question.innerHTML = qas[i].getQuestion();
 
-        cell.appendChild(img);
+        //cell.appendChild(img);
 
         //cell.setAttribute("style", "background-image: URL('"./res/Img/" + qas[i].getImgURI() + "'); background-position: center; background-size: contain; background-repeat: no-repeat;");
         //cell.setAttribute("style", "background-po")
