@@ -48,5 +48,5 @@
     { "question": "A partir de quand le droit de grêve a-t-il été rendu autorisé?", "answer": "1864", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
     { "question": "Combien y'a-t-il de conditions au droit de grêve", "answer": "4", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
     { "question": "Quelles sont les conditions au droit de grêve", "answer": "Cessation totale du travail, cessation collective du travail, cessation concerté, invoquation de revendication pro", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
-    { "question": "En principe, la grêve romp le contrat de travail ? VRAI ou FAUX", "answer": "FAUX", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] },
+    { "question": "En principe, la grêve romp le contrat de travail ? VRAI ou FAUX", "answer": "FAUX", "imgURI": "droit-de-l-entreprise-1.jpg", "type": "", "choices": ["", "", "", ""] }
 ]
