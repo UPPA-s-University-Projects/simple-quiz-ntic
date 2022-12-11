@@ -176,6 +176,13 @@ function addEventListenerToNextButton() {
 //Append every object of the table to the table table-results-body in the results.html page
 function appendToTable(qas) {
 
+    var noteDisplay = document.getElementById("note-display");
+    var noteTitle = document.createElement("h1");
+
+    noteDisplay.appendChild(noteTitle);
+    noteDisplay.appendChild(document.createElement("hr"));
+
+
     //Get the table body
     var tableBody = document.getElementById("table-results-body");
     var note = 0;
@@ -196,39 +203,59 @@ function appendToTable(qas) {
         }
         var userAnswer = qas[i].getUserAnswer();
 
+        var chckmrk = document.createElement("input");
+        chckmrk.setAttribute("type", "checkbox");
+
+
+
         //if the answer = userAnswer, the cell should be green and have a checkmark icon
         //else the cell should be red and have a cross icon
         if (answer2 != undefined) {
             if (userAnswer != undefined) {
+
+
                 if (answer.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '') || answer2.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '')) {
                     row.setAttribute("class", "row-green");
-                    cell.innerHTML = "✔️";
+                    chckmrk.checked = true;
                     note++;
                 } else {
                     row.setAttribute("class", "row-red");
-                    cell.innerHTML = "❌";
+                    chckmrk.checked = false;
                 }
             } else {
                 row.setAttribute("class", "row-red");
-                cell.innerHTML = "❌";
+                chckmrk.checked = false;
             }
         } else {
             if (userAnswer != undefined) {
                 if (answer.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '')) {
                     row.setAttribute("class", "row-green");
-                    cell.innerHTML = "✔️";
+                    chckmrk.checked = true;
                     note++;
                 } else {
                     row.setAttribute("class", "row-red");
-                    cell.innerHTML = "❌";
+                    chckmrk.checked = false;
                 }
             } else {
                 row.setAttribute("class", "row-red");
-                cell.innerHTML = "❌";
+                chckmrk.checked = false;
             }
 
         }
 
+        chckmrk.addEventListener('change', function() {
+            if (this.checked) {
+                console.log("Checkbox is checked..");
+                note++;
+                testNote(noteTitle, note, length);
+            } else {
+                console.log("Checkbox is not checked..");
+                note--;
+                testNote(noteTitle, note, length);
+            }
+        });
+
+        cell.appendChild(chckmrk);
         row.appendChild(cell);
         // cell = document.createElement("td");
         // //Set the text of the cell
@@ -273,8 +300,12 @@ function appendToTable(qas) {
         //Append the row to the table body
         tableBody.appendChild(row);
     }
-    var noteDisplay = document.getElementById("note-display");
-    var noteTitle = document.createElement("h1");
+
+
+    testNote(noteTitle, note, length);
+}
+
+function testNote(noteTitle, note, length) {
     noteTitle.innerHTML = note + "/" + length + " bonnes réponses (" + (note / length * 100).toFixed(2) + "%)";
     //Change the title attribute of the noteTitle div
     //Change the color of the title depending on the note
@@ -285,11 +316,6 @@ function appendToTable(qas) {
     } else {
         noteTitle.setAttribute("class", "title-red");
     }
-
-
-    noteDisplay.appendChild(noteTitle);
-    noteTitle = document.createElement("hr");
-    noteDisplay.appendChild(noteTitle);
 
 
 }
