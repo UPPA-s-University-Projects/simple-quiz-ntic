@@ -246,6 +246,7 @@ function addEventListenerToNextButton() {
 
                     //We loop through all the choices and create a new checkbox for each of them
                     var choices = qas[parseInt(index) + 1].getChoices();
+                    //choices = shuffle(choices);
                     var checkboxes = document.getElementById("checkboxList");
                     checkboxes.innerHTML = "";
                     for (var i = 0; i < choices.length; i++) {
@@ -314,7 +315,7 @@ function appendToTable(qas) {
             if (userAnswer != undefined) {
 
 
-                if (answer.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '') || answer2.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '')) {
+                if (answer.replace(/\s+/g, '') == userAnswer.replace(/\s+/g, '')) {
                     row.setAttribute("class", "row-green");
                     chckmrk.checked = true;
                     note++;
@@ -418,4 +419,24 @@ function testNote(noteTitle, note, length) {
     }
 
 
+}
+
+function shuffle(array) {
+    let currentIndex = array.length,
+        randomIndex;
+
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]
+        ];
+    }
+
+    return array;
 }

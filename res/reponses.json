@@ -1,25 +1,34 @@
 [{
         "question": "Comment savoir si un projet est sous Maven?",
-        "answer": "Un fichier de configuration pom.xml est généré par Maven.",
+        "answer": "Il contient un fichier de configuration  pom.xml",
         "imgURI": "maven.png",
         "choices": [
-
+            "Il contient un dossier serveur",
+            "Il contient un fichier de configuration web.xml",
+            "Il contient un fichier de configuration pom.xml",
+            "Nous pouvons nous connecter à un serveur local avec un navigateur"
         ]
     },
     {
         "question": "Qu'est-ce que Eclipse Link?",
-        "answer": "Eclipse Link est un JPA",
+        "answer": "Un JPA",
         "imgURI": "eclipse_link.png",
         "choices": [
-
+            "Un JPA",
+            "Un gestionnaire de projet",
+            "Un serveur local",
+            "Un éditeur de code (IDe)"
         ]
     },
     {
         "question": "A quoi sert un JPA?",
-        "answer": "Faire une liaison entre notre programme et notre base de données (en créant des entités selon nos tables ou inversement)",
+        "answer": "Faire une liaison entre notre programme et notre base de données, (Faire la connection avec notre base de données)",
         "imgURI": "java.png",
         "choices": [
-
+            "Gérer notre projet en ajoutant des outils pour les développeurs",
+            "Faire une liaison entre notre programme et notre base de données",
+            "Créer des endpoints pour tester depuis notre naviguateur",
+            "Faire la connection avec notre base de données"
         ]
     },
     {
@@ -27,10 +36,23 @@
         "answer": "Un gestionnaire de base de données",
         "imgURI": "postgresql.jpg",
         "choices": [
-
+            "Un JPA",
+            "Un serveur local",
+            "Un gestionnaire de base de données",
+            "Un framework"
         ]
     },
     {
+        "question": "Qu'est-ce que Tomcat?",
+        "answer": "Un serveur local",
+        "imgURI": "postgresql.jpg",
+        "choices": [
+            "Un gestionnaire de projet",
+            "Un serveur local",
+            "Un gestionnaire de base de données",
+            "Un framework"
+        ]
+    } {
         "question": "A quoi sert le design pattern \"Singleton\"?",
         "answer": "Permet d'avoir qu'une seul instance pour une classe qui ne peut avoir plusieurs instances (comme les classes DAO)",
         "imgURI": "codes/singleton.png",
