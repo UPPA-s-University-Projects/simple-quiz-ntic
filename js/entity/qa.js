@@ -2,14 +2,15 @@
 //1. question
 //2. answer
 //3. image
+//4. choices
 //4. userAnswer
 class QA {
 
-    constructor(question, answer, answer2, image, userAnswer) {
+    constructor(question, answer, image, choices, userAnswer) {
         this.question = question;
         this.answer = answer;
-        this.answer2 = answer2
         this.imgURI = image;
+        this.choices = choices;
         this.userAnswer = userAnswer;
     }
 
@@ -51,6 +52,15 @@ class QA {
 
     setUserAnswer(userAnswer) {
         this.userAnswer = userAnswer;
+    }
+
+    getChoices() {
+
+        return this.choices;
+    }
+
+    setChoices(choices) {
+        this.choices = choices;
     }
 
 

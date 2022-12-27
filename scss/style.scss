@@ -21,7 +21,7 @@ tbody tr {
 }
 
 #image {
-    width: 15%!important;
+    width: 25%!important;
     height: auto!important;
 }
 
@@ -45,4 +45,24 @@ tbody tr {
 .row-red {
     background-color: #dd4b39!important;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.disable {
+    display: none;
+}
+
+input[type="checkbox"] {
+    color: white;
+}
+
+#checkboxes {
+    width: 50%;
+    margin: auto;
+    content-align: center;
+    margin: 16px 0;
+}
+
+#checkboxList {
+    clear: both;
+    width: 100%;
 }

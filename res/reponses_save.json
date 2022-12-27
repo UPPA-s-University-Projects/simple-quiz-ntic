@@ -1,0 +1,123 @@
+[{
+        "question": "Comment savoir si un projet est sous Maven?",
+        "answer": "Un fichier de configuration pom.xml est généré par Maven.",
+        "imgURI": "maven.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce que Eclipse Link?",
+        "answer": "Eclipse Link est un JPA",
+        "imgURI": "eclipse_link.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "A quoi sert un JPA?",
+        "answer": "Faire une liaison entre notre programme et notre base de données (en créant des entités selon nos tables ou inversement)",
+        "imgURI": "java.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce que PostegresSQL?",
+        "answer": "Un gestionnaire de base de données",
+        "imgURI": "postgresql.jpg",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "A quoi sert le design pattern \"Singleton\"?",
+        "answer": "Permet d'avoir qu'une seul instance pour une classe qui ne peut avoir plusieurs instances (comme les classes DAO)",
+        "imgURI": "codes/singleton.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce que le design pattern \"Factory\"?",
+        "answer": "Permet d'instancier différentes classes depuis une seul et même classe (en singleton)",
+        "imgURI": "codes/factory.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce que le design pattern \"Singleton\"?",
+        "answer": "Permet d'avoir qu'une seul instance pour une classe qui ne peut avoir plusieurs instances (comme les classes DAO)",
+        "imgURI": "codes/singleton.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce que le design pattern \"Builder\"?",
+        "answer": "Permet de construire un objet complexe étape par étape",
+        "imgURI": "codes/builder.png",
+        "choices": [
+
+        ]
+    },
+    // { "question": "Qu'est-ce que le design pattern \"Adapter\"?", "answer": "Permet de faire correspondre des interfaces incompatibles", "imgURI": "codes/adapter.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Facade\"?", "answer": "Permet de simplifier l'utilisation d'une interface complexe", "imgURI": "codes/facade.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Proxy\"?", "answer": "Permet de contrôler l'accès à un objet", "imgURI": "codes/proxy.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Decorator\"?", "answer": "Permet d'ajouter des fonctionnalités à un objet sans modifier son code", "imgURI": "codes/decorator.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Composite\"?", "answer": "Permet de traiter des objets individuellement ou de manière collective", "imgURI": "codes/composite.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Bridge\"?", "answer": "Permet de séparer une abstraction d'une implémentation", "imgURI": "codes/bridge.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Strategy\"?", "answer": "Permet d'encapsuler un algorithme dans une classe", "imgURI": "codes/strategy.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Template Method\"?", "answer": "Permet de définir le squelette d'un algorithme dans une classe et de laisser les sous-classes redéfinir les étapes", "imgURI": "codes/template_method.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Observer\"?", "answer": "Permet de notifier les objets d'un changement d'état", "imgURI": "codes/observer.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Visitor\"?", "answer": "Permet d'ajouter des opérations à une classe sans la modifier", "imgURI": "codes/visitor.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Iterator\"?", "answer": "Permet de parcourir les éléments d'une collection sans exposer sa structure", "imgURI": "codes/iterator.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Chain of Responsibility\"?", "answer": "Permet de passer une requête à travers une chaîne de traitement", "imgURI": "codes/chain_of_responsibility.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Command\"?", "answer": "Permet de définir une commande sous forme d'objet", "imgURI": "codes/command.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"State\"?", "answer": "Permet de changer le comportement d'un objet en fonction de son état", "imgURI": "codes/state.png", "type": "" },
+    // { "question": "Qu'est-ce que le design pattern \"Memento\"?", "answer": "Permet de sauvegarder et restaurer l'état d'un objet", "imgURI": "codes/memento.png", "type": "" },
+    {
+        "question": "Qu'est-ce que Maven?",
+        "answer": "Un outil de gestion de dépendances",
+        "imgURI": "maven.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce que le fichier pom.xml?",
+        "answer": "Un fichier de configuration de Maven",
+        "imgURI": "maven.png",
+        "choices": [
+
+        ]
+    }
+    // { "question": "Qu'est-ce que le fichier settings.xml?", "answer": "Un fichier de configuration de Maven", "imgURI": "maven.png", "type": "" },
+    // { "question": "Qu'est-ce que le fichier settings-security.xml?", "answer": "Un fichier de configuration de Maven", "imgURI": "maven.png", "type": "" },
+    // { "question": "Qu'est-ce que le fichier repository.xml?", "answer": "Un fichier de configuration de Maven", "imgURI": "maven.png", "type": "" },
+    // { "question": "Qu'est-ce que le fichier archetype-catalog.xml?", "answer": "Un fichier de configuration de Maven", "imgURI": "maven.png", "type": "" },
+    // { "question": "Qu'est-ce que le fichier archetype-metadata.xml?", "answer": "Un fichier de configuration de Maven", "imgURI": "maven.png", "type": "" },
+    // { "question": "Qu'est-ce que le fichier archetype.properties?", "answer": "Un fichier de configuration de Maven", "imgURI": "maven.png", "type": "" },
+    // { "question": "Qu'est-ce que le fichier archetype.xml?", "answer": "Un fichier de configuration de Maven", "imgURI": "maven.png", "type": "" },
+    // { "question": "Qu'est-ce que le fichier archetype-resources.xml?", "answer": "Un fichier de configuration de Maven", "imgURI": "maven.png", "type": "" },
+    // { "question": "Qu'est-ce que le fichier archetype-resources.properties?", "answer": "Un fichier de configuration de Maven", "imgURI": "maven.png", "type": "" },
+    {
+        "question": "Qu'est-ce que le concept DAO?",
+        "answer": "Un concept permettant de séparer la couche métier de la couche de persistance",
+        "imgURI": "dao.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce qu'un entity manager?",
+        "answer": "Un objet permettant de gérer les entités",
+        "imgURI": "entity_manager.png",
+        "choices": [
+
+        ]
+
+    }
+
+]

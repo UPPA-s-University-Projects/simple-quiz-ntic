@@ -15,8 +15,8 @@ function openAnswer(fileName) {
     for (var i = 0; i < jsonObj.length; i++) {
         //new qa object
 
-        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].answer2, jsonObj[i].imgURI);
 
+        var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].imgURI, jsonObj[i].choices);
         qas.push(qa);
     }
 
@@ -104,7 +104,34 @@ function populateQuiz(qas) {
     document.getElementById("question").innerHTML = question;
     document.getElementById("image").src = "./res/Img/" + image;
 
+    //Si nous avons une QCM
+    if (qas[0].getChoices().length != 0) {
+        console.log("QCM");
+        document.getElementById("simple-input").setAttribute("class", "disable");
+        document.getElementById("checkboxes").setAttribute("class", "");
 
+        //We loop through all the choices and create a new checkbox for each of them
+        var choices = qas[parseInt(index) + 1].getChoices();
+        var checkboxes = document.getElementById("checkboxList");
+        checkboxes.innerHTML = "";
+        for (var i = 0; i < choices.length; i++) {
+            console.log(choices[i]);
+
+            //Create a checkbox for each choice
+            var checkbox = document.createElement("input");
+            checkbox.setAttribute("type", "checkbox");
+            checkbox.setAttribute("id", "choice" + i);
+            checkbox.setAttribute("name", "choice");
+            checkbox.setAttribute("value", choices[i]);
+            checkboxes.appendChild(checkbox);
+            checkboxes.appendChild(document.createTextNode(choices[i]));
+            checkboxes.appendChild(document.createElement("br"));
+        }
+    } else { //Sinon, nous avons une "simple question"
+        console.log("Simple question");
+        document.getElementById("simple-input").setAttribute("class", "");
+        document.getElementById("checkboxes").setAttribute("class", "disable");
+    }
 }
 
 //Adding an evenlistener to change the question when the radio button is selected
@@ -125,7 +152,34 @@ function addEventListenerToRadioButton() {
             document.getElementById("question").innerHTML = question;
             document.getElementById("image").src = "./res/Img/" + image;
 
+            //Si nous avons une QCM
+            if (qas[index].getChoices().length != 0) {
+                console.log("QCM");
+                document.getElementById("simple-input").setAttribute("class", "disable");
+                document.getElementById("checkboxes").setAttribute("class", "");
 
+                //We loop through all the choices and create a new checkbox for each of them
+                var choices = qas[parseInt(index) + 1].getChoices();
+                var checkboxes = document.getElementById("checkboxList");
+                checkboxes.innerHTML = "";
+                for (var i = 0; i < choices.length; i++) {
+                    console.log(choices[i]);
+
+                    //Create a checkbox for each choice
+                    var checkbox = document.createElement("input");
+                    checkbox.setAttribute("type", "checkbox");
+                    checkbox.setAttribute("id", "choice" + i);
+                    checkbox.setAttribute("name", "choice");
+                    checkbox.setAttribute("value", choices[i]);
+                    checkboxes.appendChild(checkbox);
+                    checkboxes.appendChild(document.createTextNode(choices[i]));
+                    checkboxes.appendChild(document.createElement("br"));
+                }
+            } else { //Sinon, nous avons une "simple question"
+                console.log("Simple question");
+                document.getElementById("simple-input").setAttribute("class", "");
+                document.getElementById("checkboxes").setAttribute("class", "disable");
+            }
         });
     }
 }
@@ -135,40 +189,86 @@ function addEventListenerToRadioButton() {
 //If there is no next radio button (i.e the last button is seleted), the next button should change the page to the result one
 //The text of the button should channge from the arrow to "Finir"
 function addEventListenerToNextButton() {
-    document.getElementById("next").addEventListener("click", function() {
-        //Get the value of the selected radio button
-        var value = document.querySelector('input[name="q-select"]:checked').value;
-        //Get the index of the selected radio button
-        var index = value.substring(1);
+    document.querySelectorAll('.next').forEach(item => {
+        item.addEventListener('click', function handleClick(event) {
+            //Get the value of the selected radio button
+            var value = document.querySelector('input[name="q-select"]:checked').value;
+            //Get the index of the selected radio button
+            var index = value.substring(1);
 
-        //Get the text input value
-        var userAnswer = document.getElementById("user-answer_input").value;
-        //Set the userAnswer of the selected qa
-        qas[index].setUserAnswer(userAnswer);
+            //Get the text input value
+            if (qas[index].getChoices().length != 0) {
+                var userAnswer = "";
+                var checkboxes = document.getElementsByName("choice");
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].checked) {
+                        userAnswer = userAnswer + checkboxes[i].value + ", ";
+                    }
+                }
+            } else {
+                var userAnswer = document.getElementById("user-answer_input").value;
+            }
 
-        //If there is no next radio button (i.e the last button is seleted), the next button should change the page to the result one
-        //The text of the button should channge from the arrow to "Finir"
-        if (index == qas.length - 1) {
-            console.log(index);
-            // document.getElementById("next").innerHTML = "Finir";
-            document.getElementById("next").addEventListener("click", function() {
-                localStorage.setItem("qas", JSON.stringify(qas));
-                console.log(qas.length);
-                //Change the page to the result one
-                window.location.href = "./results.html";
-            });
-        } else {
-            //Select the next radio button
-            document.getElementsByClassName("q-select-radio")[parseInt(index) + 1].checked = true;
-            //Select the next obj in the table and change the image accordingly
-            var question = qas[parseInt(index) + 1].getQuestion();
-            var image = qas[parseInt(index) + 1].getImgURI();
-            //Display the question and the image
-            document.getElementById("question").innerHTML = question;
-            document.getElementById("image").src = "./res/Img/" + image;
+            //Set the userAnswer of the selected qa
+            qas[index].setUserAnswer(userAnswer);
 
-            document.getElementById("user-answer_input").value = "";
-        }
+            //If there is no next radio button (i.e the last button is seleted), the next button should change the page to the result one
+            //The text of the button should channge from the arrow to "Finir"
+            if (index == qas.length - 1) {
+                console.log(index);
+                // document.getElementById("next").innerHTML = "Finir";
+                document.querySelectorAll('.next').forEach(item => {
+                    item.addEventListener('click', function handleClick(event) {
+                        localStorage.setItem("qas", JSON.stringify(qas));
+                        console.log(qas.length);
+                        //Change the page to the result one
+                        window.location.href = "./results.html";
+                    });
+                });
+
+            } else {
+                //Select the next radio button
+                document.getElementsByClassName("q-select-radio")[parseInt(index) + 1].checked = true;
+                //Select the next obj in the table and change the image accordingly
+                var question = qas[parseInt(index) + 1].getQuestion();
+                var image = qas[parseInt(index) + 1].getImgURI();
+                //Display the question and the image
+                document.getElementById("question").innerHTML = question;
+                document.getElementById("image").src = "./res/Img/" + image;
+
+                document.getElementById("user-answer_input").value = "";
+
+                //Si nous avons une QCM
+                if (qas[parseInt(index) + 1].getChoices().length != 0) {
+                    console.log("QCM");
+                    document.getElementById("simple-input").setAttribute("class", "disable");
+                    document.getElementById("checkboxes").setAttribute("class", "");
+
+                    //We loop through all the choices and create a new checkbox for each of them
+                    var choices = qas[parseInt(index) + 1].getChoices();
+                    var checkboxes = document.getElementById("checkboxList");
+                    checkboxes.innerHTML = "";
+                    for (var i = 0; i < choices.length; i++) {
+                        console.log(choices[i]);
+
+                        //Create a checkbox for each choice
+                        var checkbox = document.createElement("input");
+                        checkbox.setAttribute("type", "checkbox");
+                        checkbox.setAttribute("id", "choice" + i);
+                        checkbox.setAttribute("name", "choice");
+                        checkbox.setAttribute("value", choices[i]);
+                        checkboxes.appendChild(checkbox);
+                        checkboxes.appendChild(document.createTextNode(choices[i]));
+                        checkboxes.appendChild(document.createElement("br"));
+                    }
+
+                } else { //Sinon, nous avons une "simple question"
+                    console.log("Simple question");
+                    document.getElementById("simple-input").setAttribute("class", "");
+                    document.getElementById("checkboxes").setAttribute("class", "disable");
+                }
+            }
+        });
     });
 }
 
