@@ -111,7 +111,8 @@ function populateQuiz(qas) {
         document.getElementById("checkboxes").setAttribute("class", "");
 
         //We loop through all the choices and create a new checkbox for each of them
-        var choices = qas[parseInt(index) + 1].getChoices();
+        var choices = qas[0].getChoices();
+        //choices = shuffle(choices);
         var checkboxes = document.getElementById("checkboxList");
         checkboxes.innerHTML = "";
         for (var i = 0; i < choices.length; i++) {
@@ -127,6 +128,7 @@ function populateQuiz(qas) {
             checkboxes.appendChild(document.createTextNode(choices[i]));
             checkboxes.appendChild(document.createElement("br"));
         }
+
     } else { //Sinon, nous avons une "simple question"
         console.log("Simple question");
         document.getElementById("simple-input").setAttribute("class", "");
@@ -159,7 +161,8 @@ function addEventListenerToRadioButton() {
                 document.getElementById("checkboxes").setAttribute("class", "");
 
                 //We loop through all the choices and create a new checkbox for each of them
-                var choices = qas[parseInt(index) + 1].getChoices();
+                var choices = qas[index].getChoices();
+                //choices = shuffle(choices);
                 var checkboxes = document.getElementById("checkboxList");
                 checkboxes.innerHTML = "";
                 for (var i = 0; i < choices.length; i++) {
@@ -175,12 +178,13 @@ function addEventListenerToRadioButton() {
                     checkboxes.appendChild(document.createTextNode(choices[i]));
                     checkboxes.appendChild(document.createElement("br"));
                 }
+
             } else { //Sinon, nous avons une "simple question"
                 console.log("Simple question");
                 document.getElementById("simple-input").setAttribute("class", "");
                 document.getElementById("checkboxes").setAttribute("class", "disable");
             }
-        });
+        })
     }
 }
 

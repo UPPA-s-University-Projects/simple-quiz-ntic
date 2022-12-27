@@ -52,7 +52,7 @@
             "Un gestionnaire de base de données",
             "Un framework"
         ]
-    } {
+    }, {
         "question": "A quoi sert le design pattern \"Singleton\"?",
         "answer": "Permet d'avoir qu'une seul instance pour une classe qui ne peut avoir plusieurs instances (comme les classes DAO)",
         "imgURI": "codes/singleton.png",
