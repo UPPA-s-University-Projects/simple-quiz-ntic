@@ -17,7 +17,7 @@
             "Un JPA",
             "Un gestionnaire de projet",
             "Un serveur local",
-            "Un éditeur de code (IDe)"
+            "Un éditeur de code (IDE)"
         ]
     },
     {
@@ -51,13 +51,6 @@
             "Un serveur local",
             "Un gestionnaire de base de données",
             "Un framework"
-        ]
-    }, {
-        "question": "A quoi sert le design pattern \"Singleton\"?",
-        "answer": "Permet d'avoir qu'une seul instance pour une classe qui ne peut avoir plusieurs instances (comme les classes DAO)",
-        "imgURI": "codes/singleton.png",
-        "choices": [
-
         ]
     },
     {
@@ -101,21 +94,32 @@
         ]
     },
     {
-        "question": "Qu'est-ce que le concept DAO?",
-        "answer": "Un concept permettant de séparer la couche métier de la couche de persistance",
-        "imgURI": "dao.png",
+        "question": "Qu'est-ce qu'un entity manager?",
+        "answer": "Un objet permettant de gérer les entités",
+        "imgURI": "eclipse_link.png",
         "choices": [
 
+        ]
+
+    },
+    {
+        "question": "Quelles sont les trois techniques utilisées ici?",
+        "answer": "Héritage, Abstraction, Polymorhisme",
+        "imgURI": "codes/heritage.png",
+        "choices": [
+            "Encapsulation",
+            "Héritage",
+            "Abstraction",
+            "Polymorphisme"
         ]
     },
     {
-        "question": "Qu'est-ce qu'un entity manager?",
-        "answer": "Un objet permettant de gérer les entités",
-        "imgURI": "entity_manager.png",
+        "question": "Comment est appelé cette technique?",
+        "answer": "Encapsulation",
+        "imgURI": "codes/encapsulation.png",
         "choices": [
 
         ]
-
     }
 
 ]
