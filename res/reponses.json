@@ -63,9 +63,14 @@
     },
     {
         "question": "Qu'est-ce que Maven ?",
-        "answer": "Un outil de gestion de dépendances",
+        "answer": "Un gestionnaire de projet",
         "imgURI": "maven.png",
-        "choices": []
+        "choices": [
+            "Un JPA",
+            "Un gestionnaire de projet",
+            "Un serveur local",
+            "Un éditeur de code (IDE)"
+        ]
     },
     {
         "question": "Qu'est-ce que le fichier pom.xml ?",
@@ -81,7 +86,7 @@
     },
     {
         "question": "Qu'est-ce qu'un entity manager ?",
-        "answer": "Un objet permettant de gérer nos entités et nos requêtes vers la BDD",
+        "answer": "Une interface permettant d'accéder à des méthodes pour gérer nos entités et nos requêtes",
         "imgURI": "eclipse_link.png",
         "choices": []
     },
@@ -90,7 +95,7 @@
         "answer": "Héritage, Abstraction, Polymorphisme",
         "imgURI": "codes/heritage.png",
         "choices": [
-            "Encapsulation",
+            "Singleton",
             "Héritage",
             "Abstraction",
             "Polymorphisme"
@@ -100,7 +105,12 @@
         "question": "Comment est appelée cette technique ?",
         "answer": "Encapsulation",
         "imgURI": "codes/encapsulation.png",
-        "choices": []
+        "choices": [
+            "Encapsulation",
+            "Héritage",
+            "Abstraction",
+            "Polymorphisme"
+        ]
     },
     {
         "question": "À quoi sert cette annotation ?",
@@ -116,7 +126,7 @@
     },
     {
         "question": "À quoi sert cette annotation ?",
-        "answer": "Déclarer que notre attribut est une clé primaire",
+        "answer": "Déclarer que notre attribut est une clef primaire",
         "imgURI": "codes/annotation_id.png",
         "choices": []
     },
@@ -135,7 +145,7 @@
     {
         "question": "Que fait cette ligne ?",
         "answer": "Récupère la requête 'Episode.findAll' et l'exécute",
-        "imgURI": "java.png",
+        "imgURI": "codes/typedquery.png",
         "choices": []
     },
     {
