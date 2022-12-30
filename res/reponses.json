@@ -141,7 +141,7 @@
     {
         "question": "Que fait la méthode persist de l'interface entity manager ?",
         "answer": "Elle ajoute une entité à la BDD",
-        "imgURI": "persist.png",
+        "imgURI": "codes/persist.png",
         "choices": [
             "Elle met à jour une entité dans la BDD",
             "Elle ajoute une entité à la BDD",
@@ -151,7 +151,7 @@
     {
         "question": "Que fait la méthode merge de l'interface entity manager ?",
         "answer": "Elle met à jour une entité dans la BDD",
-        "imgURI": "merge.png",
+        "imgURI": "codes/merge.png",
         "choices": [
             "Elle met à jour une entité dans la BDD",
             "Elle ajoute une entité à la BDD",
@@ -161,7 +161,7 @@
     {
         "question": "Que fait la méthode remove de l'interface entity manager ?",
         "answer": "Elle supprime une entité de la BDD",
-        "imgURI": "remove.png",
+        "imgURI": "codes/remove.png",
         "choices": [
             "Elle met à jour une entité dans la BDD",
             "Elle ajoute une entité à la BDD",
