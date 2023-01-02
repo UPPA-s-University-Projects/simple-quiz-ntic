@@ -1,6 +1,6 @@
 [{
-        "question": "Comment savoir si un projet est sous Maven?",
-        "answer": "Il contient un fichier de configuration  pom.xml",
+        "question": "Comment savoir si un projet est sous Maven ?",
+        "answer": "Il contient un fichier de configuration pom.xml",
         "imgURI": "maven.png",
         "choices": [
             "Il contient un dossier serveur",
@@ -10,7 +10,7 @@
         ]
     },
     {
-        "question": "Qu'est-ce que Eclipse Link?",
+        "question": "Qu'est-ce qu'Eclipse Link ?",
         "answer": "Un JPA",
         "imgURI": "eclipse_link.png",
         "choices": [
@@ -21,18 +21,13 @@
         ]
     },
     {
-        "question": "A quoi sert un JPA?",
-        "answer": "Faire une liaison entre notre programme et notre base de données, (Faire la connection avec notre base de données)",
+        "question": "À quoi sert un JPA ?",
+        "answer": "Faire une liaison entre nos entités et nos tables dans la base de données",
         "imgURI": "java.png",
-        "choices": [
-            "Gérer notre projet en ajoutant des outils pour les développeurs",
-            "Faire une liaison entre notre programme et notre base de données",
-            "Créer des endpoints pour tester depuis notre naviguateur",
-            "Faire la connection avec notre base de données"
-        ]
+        "choices": []
     },
     {
-        "question": "Qu'est-ce que PostegresSQL?",
+        "question": "Qu'est-ce que PostgreSQL ?",
         "answer": "Un gestionnaire de base de données",
         "imgURI": "postgresql.jpg",
         "choices": [
@@ -43,9 +38,9 @@
         ]
     },
     {
-        "question": "Qu'est-ce que Tomcat?",
+        "question": "Qu'est-ce que Tomcat ?",
         "answer": "Un serveur local",
-        "imgURI": "postgresql.jpg",
+        "imgURI": "tomcat.jpg",
         "choices": [
             "Un gestionnaire de projet",
             "Un serveur local",
@@ -55,57 +50,60 @@
     },
     {
         "question": "Qu'est-ce que le design pattern \"Factory\"?",
-        "answer": "Permet d'instancier différentes classes depuis une seul et même classe (en singleton)",
+        "answer": "Permet d'instancier différentes classes depuis une seule et même classe (en singleton)",
         "imgURI": "codes/factory.png",
-        "choices": [
-
-        ]
+        "choices": []
     },
     {
         "question": "Qu'est-ce que le design pattern \"Singleton\"?",
-        "answer": "Permet d'avoir qu'une seul instance pour une classe qui ne peut avoir plusieurs instances (comme les classes DAO)",
+        "answer": "Permet d'avoir qu'une seule instance pour une classe qui ne peut avoir plusieurs instances (comme les classes DAO)",
         "imgURI": "codes/singleton.png",
-        "choices": [
-
-        ]
+        "choices": []
     },
     {
-        "question": "Qu'est-ce que le design pattern \"Builder\"?",
-        "answer": "Permet de construire un objet complexe étape par étape",
-        "imgURI": "codes/builder.png",
-        "choices": [
-
-        ]
-    },
-    {
-        "question": "Qu'est-ce que Maven?",
-        "answer": "Un outil de gestion de dépendances",
+        "question": "Qu'est-ce que Maven ?",
+        "answer": "Un gestionnaire de projet",
         "imgURI": "maven.png",
         "choices": [
-
+            "Un JPA",
+            "Un gestionnaire de projet",
+            "Un serveur local",
+            "Un éditeur de code (IDE)"
         ]
     },
     {
-        "question": "Qu'est-ce que le fichier pom.xml?",
-        "answer": "Un fichier de configuration de Maven",
+        "question": "Qu'est-ce que le fichier pom.xml ?",
+        "answer": "Un fichier de configuration pour Maven",
         "imgURI": "maven.png",
-        "choices": [
-
-        ]
+        "choices": []
     },
     {
-        "question": "Qu'est-ce qu'un entity manager?",
-        "answer": "Un objet permettant de gérer les entités",
+        "question": "À quoi sert le fichier pom.xml ?",
+        "answer": "Configurer notre projet et y ajouter des dépendances",
+        "imgURI": "maven.png",
+        "choices": []
+    },
+    {
+        "question": "Qu'est-ce qu'un entity manager ?",
+        "answer": "Une interface permettant d'accéder à des méthodes pour gérer nos entités et nos requêtes",
         "imgURI": "eclipse_link.png",
-        "choices": [
-
-        ]
-
+        "choices": []
     },
     {
-        "question": "Quelles sont les trois techniques utilisées ici?",
-        "answer": "Héritage, Abstraction, Polymorhisme",
+        "question": "Quelles sont les trois techniques utilisées ici ?",
+        "answer": "Héritage, Abstraction, Polymorphisme",
         "imgURI": "codes/heritage.png",
+        "choices": [
+            "Singleton",
+            "Héritage",
+            "Abstraction",
+            "Polymorphisme"
+        ]
+    },
+    {
+        "question": "Comment est appelée cette technique ?",
+        "answer": "Encapsulation",
+        "imgURI": "codes/encapsulation.png",
         "choices": [
             "Encapsulation",
             "Héritage",
@@ -114,11 +112,69 @@
         ]
     },
     {
-        "question": "Comment est appelé cette technique?",
-        "answer": "Encapsulation",
-        "imgURI": "codes/encapsulation.png",
+        "question": "À quoi sert cette annotation ?",
+        "answer": "Lier notre attribut à notre colonne dans la table ",
+        "imgURI": "codes/annotation_column.png",
+        "choices": []
+    },
+    {
+        "question": "À quoi sert cette annotation ?",
+        "answer": "Déclarer la classe comme entité pour la lier à une table dans la BDD",
+        "imgURI": "codes/annotation_entity.png",
+        "choices": []
+    },
+    {
+        "question": "À quoi sert cette annotation ?",
+        "answer": "Déclarer que notre attribut est une clef primaire",
+        "imgURI": "codes/annotation_id.png",
+        "choices": []
+    },
+    {
+        "question": "À quoi sert cette annotation ?",
+        "answer": "Créer une requête SQL nommée pour la lier à une méthode dans notre classe DAO",
+        "imgURI": "codes/annotation_namedquery.png",
+        "choices": []
+    },
+    {
+        "question": "À quoi servent les transactions ?",
+        "answer": "Faire un retour en arrière si une erreur se produit sur l'une de nos requêtes (pour préserver la cohérence de la BDD)",
+        "imgURI": "postgresql.png",
+        "choices": []
+    },
+    {
+        "question": "Que fait cette ligne ?",
+        "answer": "Récupère la requête 'Episode.findAll' et l'exécute",
+        "imgURI": "codes/typedquery.png",
+        "choices": []
+    },
+    {
+        "question": "Que fait la méthode persist de l'interface entity manager ?",
+        "answer": "Elle ajoute une entité à la BDD",
+        "imgURI": "codes/persist.png",
         "choices": [
-
+            "Elle met à jour une entité dans la BDD",
+            "Elle ajoute une entité à la BDD",
+            "Elle supprime une entité de la BDD"
+        ]
+    },
+    {
+        "question": "Que fait la méthode merge de l'interface entity manager ?",
+        "answer": "Elle met à jour une entité dans la BDD",
+        "imgURI": "codes/merge.png",
+        "choices": [
+            "Elle met à jour une entité dans la BDD",
+            "Elle ajoute une entité à la BDD",
+            "Elle supprime une entité de la BDD"
+        ]
+    },
+    {
+        "question": "Que fait la méthode remove de l'interface entity manager ?",
+        "answer": "Elle supprime une entité de la BDD",
+        "imgURI": "codes/remove.png",
+        "choices": [
+            "Elle met à jour une entité dans la BDD",
+            "Elle ajoute une entité à la BDD",
+            "Elle supprime une entité de la BDD"
         ]
     },
     {
