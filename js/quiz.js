@@ -1,4 +1,7 @@
 //Function to open the answer json file inside the res folder
+
+const { systemPreferences } = require("@electron/remote");
+
 //Dump all the data inside a table of object dezerialized from the json file
 function openAnswer(fileName) {
     //Open the json file 
@@ -14,7 +17,6 @@ function openAnswer(fileName) {
     var qas = [];
     for (var i = 0; i < jsonObj.length; i++) {
         //new qa object
-
 
         var qa = new QA(jsonObj[i].question, jsonObj[i].answer, jsonObj[i].imgURI, jsonObj[i].choices);
         qas.push(qa);
@@ -219,12 +221,13 @@ function addEventListenerToNextButton() {
             //If there is no next radio button (i.e the last button is seleted), the next button should change the page to the result one
             //The text of the button should channge from the arrow to "Finir"
             if (index == qas.length - 1) {
-                console.log(index);
+
                 // document.getElementById("next").innerHTML = "Finir";
                 document.querySelectorAll('.next').forEach(item => {
                     item.addEventListener('click', function handleClick(event) {
                         localStorage.setItem("qas", JSON.stringify(qas));
-                        console.log(qas.length);
+
+
                         //Change the page to the result one
                         window.location.href = "./results.html";
                     });
@@ -381,6 +384,17 @@ function appendToTable(qas) {
         //cell.setAttribute("style", "background-po")
         //Append the cell to the row
         row.appendChild(cell);
+
+        //Append a new cell to the row
+        cell = document.createElement("td");
+
+        var imageURI = qas[i].getImgURI();
+
+        var imgTag = document.createElement("img");
+        imgTag.setAttribute("src", "./res/Img/" + imageURI);
+        cell.append(imgTag);
+        row.append(cell);
+
         //Append a new cell to the row
         cell = document.createElement("td");
         //Set the text of the cell
