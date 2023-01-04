@@ -139,7 +139,7 @@
     {
         "question": "À quoi servent les transactions ?",
         "answer": "Faire un retour en arrière si une erreur se produit sur l'une de nos requêtes (pour préserver la cohérence de la BDD)",
-        "imgURI": "postgresql.png",
+        "imgURI": "postgresql.jpg",
         "choices": []
     },
     {
