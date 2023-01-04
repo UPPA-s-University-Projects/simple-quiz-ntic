@@ -1,5 +1,4 @@
-[
-    {
+[{
         "question": "Comment savoir si un projet est sous Maven ?",
         "answer": "Il contient un fichier de configuration pom.xml",
         "imgURI": "maven.png",
@@ -176,6 +175,74 @@
             "Elle met à jour une entité dans la BDD",
             "Elle ajoute une entité à la BDD",
             "Elle supprime une entité de la BDD"
+        ]
+    },
+    {
+        "question": "Qu'est-ce que le verbe GET?",
+        "answer": "Permet de récupérer des données",
+        "imgURI": "http.jpg",
+        "choices": [
+            "Permet de récupérer des données",
+            "Permet d'envoyer des données",
+            "Permet de modifier des données",
+            "Permet de supprimer des données"
+        ]
+    },
+    {
+        "question": "Qu'est-ce que le verbe POST?",
+        "answer": "Permet d'envoyer des données",
+        "imgURI": "http.jpg",
+        "choices": [
+            "Permet de récupérer des données",
+            "Permet d'envoyer des données",
+            "Permet de modifier des données",
+            "Permet de supprimer des données"
+        ]
+    },
+    {
+        "question": "Qu'est-ce que le verbe PUT?",
+        "answer": "Permet de modifier des données",
+        "imgURI": "http.jpg",
+        "choices": [
+            "Permet de récupérer des données",
+            "Permet d'envoyer des données",
+            "Permet de modifier des données",
+            "Permet de supprimer des données"
+        ]
+    },
+    {
+        "question": "Qu'est-ce que le verbe DELETE?",
+        "answer": "Permet de supprimer des données",
+        "imgURI": "http.jpg",
+        "choices": [
+            "Permet de récupérer des données",
+            "Permet d'envoyer des données",
+            "Permet de modifier des données",
+            "Permet de supprimer des données"
+        ]
+    },
+    {
+        "question": "Qu'est-ce qu'une API Rest?",
+        "answer": "Une API qui utilise les verbes HTTP",
+        "imgURI": "http.jpg",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "A quoi servent ces lignes de code?",
+        "answer": "Permet de déclarer cette attribut comme clef primaire",
+        "imgURI": "codes/annotGetId.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "A quoi servent ces lignes de code?",
+        "answer": "Permet de déclarer la classe comme une entité à lier avec la table Serie",
+        "imgURI": "codes/annotEntity.png",
+        "choices": [
+
         ]
     }
 ]
