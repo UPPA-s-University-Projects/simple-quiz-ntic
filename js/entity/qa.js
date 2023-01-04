@@ -6,10 +6,10 @@
 //4. userAnswer
 class QA {
 
-    constructor(question, answer, image, choices, userAnswer) {
+    constructor(question, answer, imgURI, choices, userAnswer) {
         this.question = question;
         this.answer = answer;
-        this.imgURI = image;
+        this.imgURI = imgURI;
         this.choices = choices;
         this.userAnswer = userAnswer;
     }

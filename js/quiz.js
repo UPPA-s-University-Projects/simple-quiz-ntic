@@ -388,10 +388,10 @@ function appendToTable(qas) {
         //Append a new cell to the row
         cell = document.createElement("td");
 
-        var imageURI = qas[i].getImgURI();
+        var image = qas[i].getImgURI();
 
         var imgTag = document.createElement("img");
-        imgTag.setAttribute("src", "./res/Img/" + imageURI);
+        imgTag.setAttribute("src", "./res/Img/" + image);
         cell.append(imgTag);
         row.append(cell);
 
