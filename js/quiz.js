@@ -104,7 +104,7 @@ function populateQuiz(qas) {
     var image = qas[0].getImgURI();
     //Display the question and the image
     document.getElementById("question").innerHTML = question;
-    document.getElementById("image").src = image;
+    document.getElementById("image").src = "./res/Img/" + image;
 
     //Si nous avons une QCM
     if (qas[0].getChoices().length != 0) {
@@ -154,7 +154,7 @@ function addEventListenerToRadioButton() {
             var image = qas[index].getImgURI();
             //Display the question and the image
             document.getElementById("question").innerHTML = question;
-            document.getElementById("image").src = image;
+            document.getElementById("image").src = "./res/Img/" + image;
 
             //Si nous avons une QCM
             if (qas[index].getChoices().length != 0) {
@@ -241,7 +241,7 @@ function addEventListenerToNextButton() {
                 var image = qas[parseInt(index) + 1].getImgURI();
                 //Display the question and the image
                 document.getElementById("question").innerHTML = question;
-                document.getElementById("image").src = image;
+                document.getElementById("image").src = "./res/Img/" + image;
 
                 document.getElementById("user-answer_input").value = "";
 
@@ -391,7 +391,7 @@ function appendToTable(qas) {
         var image = qas[i].getImgURI();
 
         var imgTag = document.createElement("img");
-        imgTag.setAttribute("src", image);
+        imgTag.setAttribute("src", "./res/Img/" + image);
         cell.append(imgTag);
         row.append(cell);
 
