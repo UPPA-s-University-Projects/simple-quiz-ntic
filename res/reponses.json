@@ -1,8 +1,352 @@
 [{
-    "question": "Comment savoir si un projet est sous Maven ?",
-    "answer": "Il contient un fichier de configuration pom.xml",
-    "imgURI": "res/Img/droit-de-l-entreprise-1.png",
-    "choices": [
+        "question": "Quels sont les deux types de droit de la propriété ?",
 
-    ]
-}, ]
+        "answer": "Littéraire artistique, industrielle",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Commerciale",
+            "Littéraire artistique",
+            "Industrielle",
+            "intellectuelle"
+        ]
+    },
+    {
+        "question": "Quelles sont les conditions du droit d'auteur ?",
+        "answer": "L'oeuvre doit être original",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Que permet le droit d'auteur ?",
+        "answer": "Protéger la forme",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Protéger les idées",
+            "Protéger la forme"
+        ]
+    },
+    {
+        "question": "Y'a-t-il une condition de forme au droit d'auteur ?",
+        "answer": "Non",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Oui",
+            "Non"
+        ]
+    },
+    {
+        "question": "Qu'est-ce qui est conseillé de faire pour protéger son oeuvre (titre de preuve) ?",
+        "answer": "Déclarer l'oeuvre à la SACEM",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce qu'une contrefaçons ?",
+        "answer": "Oeuvre réutilisé sans accords de l'auteur",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Quelle est la sanction pour une contrefaçons ?",
+        "answer": "Optention de dommages et intérêts, sanction pénale de 3 ans de prison + 300k€ d'amende",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Optention de dommages et intérêts",
+            "Sanction pénale de 2 ans de prison + 200k€ d'amende",
+            "Sanction pénale de 3 ans de prison + 300k€ d'amende",
+            "Sanction pénale de 4 ans de prison + 400k€ d'amende"
+
+        ]
+    },
+    {
+        "question": "Quelle est la compétence du tribunal correctionnel lors d'une contrefaçons ?",
+        "answer": "La saisie de la contrefaçons (en attente de la décision du tribunal)",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+
+        ]
+    },
+    {
+        "question": "Quelle sont les exceptions où il n'y aura pas de saction pour la propriété intellectuelle ?",
+        "answer": "Cercle familial, secteur publique, parodie ou pastiche",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Cercle familial",
+            "Secteur publique",
+            "Secteur privé",
+            "Parodie ou pastiche"
+
+        ]
+    },
+    {
+        "question": "Que fournis un droit d'auteur ?",
+        "answer": "Un droit patrimonial, un droit patrimonial",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Droit patrimonial",
+            "droit personnel",
+            "droit extraterritorial",
+            "Droit extrapatrimonial"
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce qu'un droit extrapatrimoniaux ?",
+        "answer": "Droit moral du droit d'auteur",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Droit physique du droit d'auteur",
+            "Droit moral du droit d'auteur",
+            "Droit économique du droit d'auteur"
+        ]
+    },
+    {
+        "question": "A quoi sert le droit extrapatrimoniaux ?",
+        "answer": "Respect de la paternité de l'oeuvre (nom d'auteur cité), droit de retrait de l'oeuvre, droit de divulgation de l'oeuvre",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Droit de la paternité de l'oeuvre (nom d'auteur cité)",
+            "Droit économique de l'oeuvre",
+            "Droit de retrait de l'oeuvre",
+            "Droit de divulgation de l'oeuvre"
+
+        ]
+    },
+    {
+        "question": "Si un employé créer une oeuvre dans le cadre du contrat de travail, à qui appartient le droit d'auteur ?",
+        "answer": "Au salarié SAUF si le contrat de travail stipule le contraire",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+
+        ]
+    },
+    {
+        "question": "Quelle est la différence entre une oeuvre collective et collaborative ?",
+        "answer": "Collaborative : Appartient à tous les salariés, collective : N'appartient qu'à celui qui est à l'initiative du projet",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce qu'une fake news ?",
+        "answer": "Une information délibérément fausse qui est destiné à tromper son destinataire ou à manipuler l'opinion publique",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+
+        ]
+    },
+    {
+        "question": "Quelles sont les conditions de fonds pour qu'une oeuvre soit brevetable ?",
+        "answer": "Objet technique, une invention qui doit être brevetable, nouvelle, inventive, qui ne soit pas contraire à l'ordre publique, à caractère industriel ou commercial",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+
+        ]
+    },
+    {
+        "question": "Quelles sont les conditions de formes pour qu'une oeuvre soit brevetable ?",
+        "answer": "Enregistrer son brevet à l'INPI, coût croissant",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+
+        ]
+    },
+    {
+        "question": "Quels sont les points communs entre le droit voisin et le droit d'auteur ?",
+        "answer": "Sanction (contrefaçons), pour les deux on est à la fois titulaire d'un droit patrimonial et morale mais plus limité. Durée de 70 ans pour le patrimonial, et à vie pour extrapatrimonial et la structure",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+
+        ]
+    },
+    {
+        "question": "Quels sont les différences entre le droit voisin et le droit d'auteur ?",
+        "answer": "Conditions (droit d'auteur doit être original alors que le droit voison n'est pas autonome)",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+
+        ]
+    },
+    {
+        "question": "Quels sont les différences entre le droit voisin et le droit d'auteur ?",
+        "answer": "Conditions (droit d'auteur doit être original alors que le droit voison n'est pas autonome)",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce qui caractérise un droit patrimonial réel ?",
+        "answer": "Cessible, Monnayable, limité dans le temps ",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Cessible",
+            "Transmissible",
+            "Monnayable",
+            "Limité dans le temps"
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce qui caractérise un droit patrimonial réel ?",
+        "answer": "Cessible, Monnayable, limité dans le temps ",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Cessible",
+            "Transmissible",
+            "Monnayable",
+            "Limité dans le temps"
+
+        ]
+    },
+    {
+        "question": "Qu'est-ce qui caractérise un droit extrapatrimonial moral ?",
+        "answer": "Non cessible, Non monnayable, Illimité dans le temps",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Non Cessible",
+            "Non Transmissible",
+            "Non Monnayable",
+            "Non Limité dans le temps"
+        ]
+    },
+    {
+        "question": "Qualifiez juridiquement le droit suivant : Je suis propriétaire d'une voiture de collection ",
+        "answer": "Droit patrimonial réel",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Droit patrimonial réel",
+            "Droit extrapatrimonial moral",
+            "Droit patrimonial personnel",
+            "Droit patrimonial intellectuel"
+        ]
+    },
+    {
+        "question": "Qualifiez juridiquement le droit suivant : Je créé(e) un site internet ou un jeu-vidéo ",
+        "answer": "Droit patrimonial, droit extrapatrimonial moral",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Droit patrimoniale",
+            "Droit extrapatrimonial moral",
+            "Droit patrimonial personnel",
+            "Droit patrimonial intellectuel"
+        ]
+    },
+    {
+        "question": "Qualifiez juridiquement le droit suivant : Mon voisin m'a prété une somme de 800 € ",
+        "answer": "Droit patrimonial personnel",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Droit patrimoniale réel",
+            "Droit extrapatrimonial moral",
+            "Droit patrimonial personnel",
+            "Droit patrimonial intellectuel"
+        ]
+    },
+    {
+        "question": "Qualifiez juridiquement le droit suivant : Mon employeur a consulté mes mails personnels sur mon ordinateur professionnel ",
+        "answer": "Droit extrapatrimonial moral",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Droit patrimoniale réel",
+            "Droit extrapatrimonial moral",
+            "Droit patrimonial personnel",
+            "Droit patrimonial intellectuel"
+        ]
+    },
+    {
+        "question": "Qualifiez juridiquement le droit suivant : J'ai composé une musique classique originale, elle est utilisé dans un film pornographique sans mon autorisation (un gros film de boule hein, Marc Dorcel le truc) ",
+        "answer": "Droit extrapatrimonial moral",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Droit patrimoniale réel",
+            "Droit extrapatrimonial moral",
+            "Droit patrimonial personnel",
+            "Droit patrimonial intellectuel"
+        ]
+    },
+    {
+        "question": "Qualifiez juridiquement le droit suivant : Je décide en tant que dentiste de céder ma patientèle",
+        "answer": "Droit patrimonial intellectuel",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Droit patrimoniale réel",
+            "Droit extrapatrimonial moral",
+            "Droit patrimonial personnel",
+            "Droit patrimonial intellectuel"
+        ]
+    },
+    {
+        "question": "Distinguez droit de brevet et droit d'auteur au regard de l'objet de production. ",
+        "answer": "Droit d'auteur : vient protéger une oeuvre de l'esprit originale; droit de brevet : vient protéger une invention.",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Distinguez droit de brevet et droit d'auteur au regard de l'objet de production. ",
+        "answer": "Droit d'auteur : vient protéger une oeuvre de l'esprit originale; droit de brevet : vient protéger une invention.",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Que doit être une marque pour être déposée ?",
+        "answer": "Licite, non contraire à l'ordre publique, elle doit prendre une certaine forme (graphique, sonore, etc.), elle doit être distinctive, ne pas être descriptive du produit auquel elle se rapporte, elle ne doit pas reprendre une des caractéristiques essentielles du produit et elle ne doit pas être déceptive.",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+        ]
+    },
+    {
+        "question": "Quelles sont les conditions de fonds pour déposer une marque ?",
+        "answer": "Licite, non contraire à l'ordre publique, elle doit prendre une certaine forme (graphique, sonore, etc.), elle doit être distinctive, ne pas être descriptive du produit auquel elle se rapporte, elle ne doit pas reprendre une des caractéristiques essentielles du produit et elle ne doit pas être déceptive.",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "Licite",
+            "Non contraire à l'ordre publique",
+            "Elle doit prendre une certaine forme (graphique, sonore, etc.)",
+            "Elle doit être distinctive",
+            "Ne pas être descriptive du produit auquel elle se rapporte",
+            "Elle ne doit pas reprendre une des caractéristiques essentielles du produit",
+            "Elle ne doit pas être déceptive"
+        ]
+    },
+    {
+        "question": "Quelles sont les conditions de formes pour déposer une marque ?",
+        "answer": "S'enregistre à l'INIPI, Renouvelable tous les 10 ans",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+            "S'enregistre à l'INPI",
+            "S'enregistre à la SACEM",
+            "Renouvelable tous les 10 ans",
+            "Renouvelable tous les 70 ans"
+        ]
+    },
+    {
+        "question": "Qu'est-ce que le parasitisme ?",
+        "answer": "Pratique consistant à profiter de la réputation, du savoir faire ou des investissement d'un tiers en se plaçant dans le siage sans rien dépenser",
+        "imgURI": "res/Img/droit-de-l-entreprise-1.png",
+        "choices": [
+
+        ]
+    },
+]
