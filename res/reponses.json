@@ -10,7 +10,7 @@
         ]
     },
     {
-        "question": "Quelles sont les conditions du droit d'auteur ?",
+        "question": "Quelle est la condition du droit d'auteur ?",
         "answer": "L'oeuvre doit être original",
         "imgURI": "droit-de-l-entreprise-1.jpg",
         "choices": [
@@ -146,7 +146,7 @@
         ]
     },
     {
-        "question": "Quelles sont les conditions de formes pour qu'une oeuvre soit brevetable ?",
+        "question": "Quelle est la condition de forme pour qu'une oeuvre soit brevetable ?",
         "answer": "Enregistrer son brevet à l'INPI, coût croissant",
         "imgURI": "droit-de-l-entreprise-1.jpg",
         "choices": [
@@ -154,7 +154,7 @@
         ]
     },
     {
-        "question": "Quels sont les points communs entre le droit voisin et le droit d'auteur ?",
+        "question": "Quels sont les points communs entre le droit voisin et le droit d'auteur ? (sanctions, durée, etc)",
         "answer": "Sanction (contrefaçons), pour les deux on est à la fois titulaire d'un droit patrimonial et morale mais plus limité. Durée de 70 ans pour le patrimonial, et à vie pour extrapatrimonial et la structure",
         "imgURI": "droit-de-l-entreprise-1.jpg",
         "choices": [
@@ -162,16 +162,8 @@
         ]
     },
     {
-        "question": "Quels sont les différences entre le droit voisin et le droit d'auteur ?",
-        "answer": "Conditions (droit d'auteur doit être original alors que le droit voison n'est pas autonome)",
-        "imgURI": "droit-de-l-entreprise-1.jpg",
-        "choices": [
-
-        ]
-    },
-    {
-        "question": "Quels sont les différences entre le droit voisin et le droit d'auteur ?",
-        "answer": "Conditions (droit d'auteur doit être original alors que le droit voison n'est pas autonome)",
+        "question": "Quel est la différence entre le droit voisin et le droit d'auteur ?",
+        "answer": "Droit d'auteur doit être original alors que le droit voison n'est pas autonome, il doit être lié à un autre droit",
         "imgURI": "droit-de-l-entreprise-1.jpg",
         "choices": [
 
