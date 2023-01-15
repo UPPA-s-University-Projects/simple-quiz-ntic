@@ -189,17 +189,6 @@
         ]
     },
     {
-        "question": "Qu'est-ce qui caractérise un droit patrimonial réel ?",
-        "answer": "Cessible, Monnayable, limité dans le temps ",
-        "imgURI": "droit-de-l-entreprise-1.jpg",
-        "choices": [
-            "Cessible",
-            "Transmissible",
-            "Monnayable",
-            "Limité dans le temps"
-        ]
-    },
-    {
         "question": "Qu'est-ce qui caractérise un droit extrapatrimonial moral ?",
         "answer": "Non cessible, Non monnayable, Illimité dans le temps",
         "imgURI": "droit-de-l-entreprise-1.jpg",
@@ -274,14 +263,6 @@
             "Droit extrapatrimonial moral",
             "Droit patrimonial personnel",
             "Droit patrimonial intellectuel"
-        ]
-    },
-    {
-        "question": "Distinguez droit de brevet et droit d'auteur au regard de l'objet de production. ",
-        "answer": "Droit d'auteur : vient protéger une oeuvre de l'esprit originale; droit de brevet : vient protéger une invention.",
-        "imgURI": "droit-de-l-entreprise-1.jpg",
-        "choices": [
-
         ]
     },
     {
